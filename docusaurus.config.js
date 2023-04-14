@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
+  title: "iiumGo",
   tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
@@ -39,10 +39,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/waimancoder/iiumgo-docs",
+          editUrl: "https://github.com/waimancoder/iiumgo-docs/blob/main/",
         },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -54,27 +56,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/apple-touch-icon.png",
       navbar: {
-        title: "My Site",
+        title: "iiumGo",
         logo: {
           alt: "My Site Logo",
-          src: "img/logo.svg",
+          src: "img/apple-touch-icon.png",
         },
-        items: [
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
       },
       footer: {
         style: "dark",
@@ -83,8 +71,16 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Introduction",
+                to: "/",
+              },
+              {
+                label: "Rest API",
+                to: "/category/rest-api",
+              },
+              {
+                label: "Websocket",
+                to: "/category/websocket-api",
               },
             ],
           },
@@ -92,7 +88,7 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
+                label: "Facebook",
                 href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
@@ -108,10 +104,6 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/facebook/docusaurus",

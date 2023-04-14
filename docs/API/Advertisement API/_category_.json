@@ -1,0 +1,10 @@
+{
+  "label": "Advertisement",
+  "position": 4,
+  "link": {
+    "type": "generated-index"
+  },
+  "customProps": {
+    "description": "This description can be used in the swizzled DocCard"
+  }
+}
